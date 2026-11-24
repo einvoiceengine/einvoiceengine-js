@@ -1,0 +1,54 @@
+{
+  "name": "@einvoiceengine/sdk",
+  "version": "0.1.0",
+  "description": "TypeScript client and command-line tool for the E-Invoicing API (no runtime dependencies)",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "einv": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "~5.9.3"
+  },
+  "license": "MIT",
+  "homepage": "https://einvoiceengine.com/docs/sdk",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/einvoiceengine/einvoiceengine-js.git"
+  },
+  "bugs": "https://github.com/einvoiceengine/einvoiceengine-js/issues",
+  "keywords": [
+    "e-invoicing",
+    "xrechnung",
+    "zugferd",
+    "factur-x",
+    "peppol",
+    "en16931",
+    "facturae",
+    "ksef",
+    "einvoice"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
