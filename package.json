@@ -1,6 +1,6 @@
 {
   "name": "@einvoiceengine/sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript client and command-line tool for the E-Invoicing API (no runtime dependencies)",
   "type": "module",
   "main": "dist/index.js",
